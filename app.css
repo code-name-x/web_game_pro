@@ -1,0 +1,276 @@
+#trans{
+  width: 100%;
+  height: 100%;
+padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+border: 1px solid #333;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(51, 51, 51);
+    border-right-color: rgb(51, 51, 51);
+    border-bottom-color: rgb(51, 51, 51);
+    border-left-color: rgb(51, 51, 51);
+    border-image-source: none;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    background-size: cover;
+background-image: url('http://in2gpu.com/wp-content/uploads/2015/03/background.jpg');
+/*background-repeat: no-repeat;*/
+background-position: -400px -150px;
+    background-position-x: -400px;
+    background-position-y: -150px;
+-webkit-transition: background-position .5s ease-in-out;
+    transition-property: background-position;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+-moz-transition: background-position .5s ease-in-out;
+    transition-property: background-position;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+-o-transition: background-position .5s ease-in-out;
+transition: background-position .5s ease-in-out;
+    transition-property: background-position;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+body{
+  background: #000000;
+  background-image: url('img/back_3.png');
+}
+
+/*efecto del inicio */
+.welcome-section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('img/back_3.png');
+  overflow: hidden;
+}
+.fly{
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.fly li{
+  font-family: 'Poiret One', cursive;
+  display: inline-block;
+  color: #666;
+  font-size:4em;
+  margin-right: 50px;
+  font-weight: 300px;
+  opacity: 1;
+  transition: all 2.5s ease;
+}
+fly li:last-child(11){
+  margin-right: 0;
+}
+
+.fly.hidden li{
+  opacity: 0;
+}
+.fly.hidden li:nth-child(1){transform: translateX(-200px) translateY(-200px);}
+.fly.hidden li:nth-child(2){transform: translateX(20px) translateY(100px);}
+.fly.hidden li:nth-child(3){transform: translateX(-150px) translateY(-80px);}
+.fly.hidden li:nth-child(4){transform: translateX(10px) translateY(-200px);}
+.fly.hidden li:nth-child(5){transform: translateX(-300px) translateY(200px);}
+.fly.hidden li:nth-child(6){transform: translateX(0px) translateY(0px);}
+.fly.hidden li:nth-child(7){transform: translateX(20px) translateY(-20px);}
+.fly.hidden li:nth-child(8){transform: translateX(30px) translateY(200px);}
+.fly.hidden li:nth-child(9){transform: translateX(-150px) translateY(-80px);}
+.fly.hidden li:nth-child(10){transform: translateX(-200px) translateY(-200px);}
+.fly.hidden li:nth-child(11){transform: translateX(20px) translateY(100px);}
+
+.wrapper{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-right: 400px;
+  margin-left: 600px;
+  margin-top: 400px;
+
+}
+.content-wrap a{
+  position: absolute;
+  top:60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.enter-button{
+  font-family: 'Press Start 2P', cursive;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  color:#529b98;
+  opacity: 1;
+  margin-top: 10px;
+  transition: all 1s ease 3s;
+}
+
+/*close message*/
+#alert {
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    visibility: hidden;
+}
+#muerte {
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    visibility: hidden;
+}
+#won {
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 20px;
+    background-color: #01ae0b;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+/*fade in*/
+a{
+    -webkit-animation: fadi 20s 1;
+}
+@-webkit-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h2{
+    /*word-wrap: break-word*/
+    font-size: 100px;
+    color: #666;
+    font-family: monospace;
+    text-align: center;
+}
+h3{
+    /*word-wrap: break-word*/
+    font-size: 50px;
+    color: #666;
+    font-family: monospace;
+    text-align: center;
+}
+
+.background{
+  position: absolute;
+  background-image: url('img/back_3.png');
+  table-layout: fixed;
+  background-size: 100%;
+  border: 1px solid red;
+  background-repeat: no-repeat;
+  border-spacing: 0;
+}
+.background td{
+    padding:  0;
+}
+.lava, .actor{
+    background: #e55;
+}
+.wall{
+    background: #444;
+    border: solid 3px #333;
+    box-sizing: content-box;
+}
+.actor{
+    position: absolute;
+}
+.coin{
+    background: #e2e838;
+}
+.player{
+    background: #FF6EC7;
+}
+.lost .player{
+    background: #a04040;
+}
+.won .player {
+    background: green;
+}
+
+.game{
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 100px;
+  position: relative;
+}
+
+footer{
+    -webkit-animation: fadi 10s 1;
+}
+@-webkit-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadi {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+footer{
+    word-wrap: break-word
+    /*position: absolute;*/
+    left: 50%;
+    top: 50%;
+    transform: translateX(1%) translateY(6500%);
+    font-size: 10px;
+    color: #46504f;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
